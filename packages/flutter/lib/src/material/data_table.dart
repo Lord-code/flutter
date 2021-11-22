@@ -895,8 +895,9 @@ class DataTable extends StatelessWidget {
       ?? themeData.dataTableTheme.dataRowHeight
       ?? kMinInteractiveDimension;
     label = Container(
-      padding: padding,
-      height: effectiveDataRowHeight,
+      // padding: padding, // omg, FIXME
+      // height: effectiveDataRowHeight, // omg, FIXME
+      padding: EdgeInsets.symmetric(vertical: 12, horizontal: 12), // omg, FIXME
       alignment: numeric ? Alignment.centerRight : AlignmentDirectional.centerStart,
       child: DefaultTextStyle(
         style: effectiveDataTextStyle.copyWith(
