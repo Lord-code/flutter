@@ -202,7 +202,10 @@ class ChromiumLauncher {
       // Since we are using a temp profile, disable features that slow the
       // Chrome launch.
       '--disable-extensions',
+      '--disable-web-security',
+      '--user-data-dir',
       '--disable-popup-blocking',
+      '--window-size=480,852',
       '--bwsi',
       '--no-first-run',
       '--no-default-browser-check',
